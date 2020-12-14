@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1011.0" style="-fx-background-color: transparent;" stylesheets="@../resource/style/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.StatisticController">
+   <children>
+      <Text layoutX="436.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textCaptionRus" text="Статистика" />
+      <PieChart fx:id="pieChart" layoutX="36.0" layoutY="101.0" />
+      <Button fx:id="saveButton" layoutX="343.0" layoutY="657.0" mnemonicParsing="false" onAction="#sendInformation" prefHeight="43.0" prefWidth="339.0" styleClass="buttonLogin" text="Сохранить">
+         <font>
+            <Font name="Montserrat Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PieChart fx:id="pieCategory" layoutX="30.0" layoutY="110.0" prefHeight="400.0" prefWidth="432.0" title="Статистика покупок товара по категориям" />
+      <PieChart fx:id="pieId" layoutX="550.0" layoutY="110.0" prefHeight="400.0" prefWidth="432.0" title="Статистика покупок товара по id" />
+   </children>
+</Pane>

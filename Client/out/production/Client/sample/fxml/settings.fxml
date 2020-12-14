@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1011.0" stylesheets="@../resource/style/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SettingsController">
+   <children>
+      <Text layoutX="390.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textCaptionRus" text="Информация пользователя" />
+      <Pane layoutX="28.0" layoutY="73.0" prefHeight="110.0" prefWidth="219.0" style="-fx-background-color: ffffff; -fx-border-radius: 5; -fx-background-radius: 10;" styleClass="paneShadow">
+         <children>
+            <Line endX="12.266693115234375" endY="-1.52587890625E-5" fill="BLACK" layoutX="196.0" layoutY="80.0" startX="-184.0" startY="-1.52587890625E-5" />
+            <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Куплено товаров" wrappingWidth="147.95001983642578">
+               <font>
+                  <Font name="mr_ApexMk3 Medium" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="textPurchased" layoutX="156.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textCaption" text="20" textAlignment="RIGHT" />
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="15.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/img/purchase.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="273.0" layoutY="73.0" prefHeight="110.0" prefWidth="219.0" style="-fx-background-color: ffffff; -fx-border-radius: 5; -fx-background-radius: 10;" styleClass="paneShadow">
+         <children>
+            <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Потрачено денег" wrappingWidth="181.01367187500006">
+               <font>
+                  <Font name="mr_ApexMk3 Medium" size="16.0" />
+               </font>
+            </Text>
+            <Line endX="12.266693115234375" endY="-1.52587890625E-5" fill="BLACK" layoutX="196.0" layoutY="80.0" startX="-184.0" startY="-1.52587890625E-5" />
+            <Text fx:id="textSpent" layoutX="71.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textLabel" text="33000" textAlignment="RIGHT" wrappingWidth="124.08395385742182">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="15.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/img/money_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="518.0" layoutY="73.0" prefHeight="110.0" prefWidth="219.0" style="-fx-background-color: ffffff; -fx-border-radius: 5; -fx-background-radius: 10;" styleClass="paneShadow">
+         <children>
+            <Line endX="12.266693115234375" endY="-1.52587890625E-5" fill="BLACK" layoutX="196.0" layoutY="80.0" startX="-184.0" startY="-1.52587890625E-5" />
+            <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Получено бонусов" wrappingWidth="147.95001983642578">
+               <font>
+                  <Font name="mr_ApexMk3 Medium" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="15.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/img/gift_50px.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="textReceived" layoutX="67.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textLabel" text="3300" textAlignment="RIGHT" wrappingWidth="130.05599975585938">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="761.0" layoutY="73.0" prefHeight="110.0" prefWidth="219.0" style="-fx-background-color: ffffff; -fx-border-radius: 5; -fx-background-radius: 10;" styleClass="paneShadow">
+         <children>
+            <Line endX="12.266693115234375" endY="-1.52587890625E-5" fill="BLACK" layoutX="196.0" layoutY="80.0" startX="-184.0" startY="-1.52587890625E-5" />
+            <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата регистрации" wrappingWidth="147.95001983642578">
+               <font>
+                  <Font name="mr_ApexMk3 Medium" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="textDate" layoutX="70.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textCaption" text="24.08.2020" textAlignment="CENTER" />
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="15.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/img/calendar_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="28.0" layoutY="202.0" prefHeight="515.0" prefWidth="951.0" style="-fx-background-color: ffffff; -fx-border-radius: 5; -fx-background-radius: 10;" styleClass="paneShadow">
+         <children>
+            <TableView fx:id="tableInformation" layoutX="24.0" layoutY="123.0" prefHeight="385.0" prefWidth="891.0" style="-fx-border-color: ffffff; -fx-background-color: ffffff;">
+               <columns>
+                  <TableColumn fx:id="columnID" prefWidth="51.20001220703125" text="id" />
+                  <TableColumn fx:id="columnName" prefWidth="228.7999725341797" text="Название товара" />
+                  <TableColumn fx:id="columnValue" prefWidth="93.60000610351562" text="Количество" />
+                  <TableColumn fx:id="columnCash" prefWidth="126.39996337890625" text="Потрачено денег" />
+                  <TableColumn fx:id="columnBonus" prefWidth="116.79998779296875" text="Получено бонусов" />
+                  <TableColumn fx:id="columnDate" prefWidth="259.199951171875" text="Дата покупки" />
+               </columns>
+            </TableView>
+            <Line endX="680.5333251953125" fill="BLACK" layoutX="251.0" layoutY="113.0" startX="-233.60000610351562" />
+            <TextField fx:id="codeField" layoutX="274.0" layoutY="69.0" prefHeight="25.0" prefWidth="161.0" visible="false" />
+            <Text layoutX="20.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация о пользователе:">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="informationSelect1" layoutX="222.0" layoutY="12.0" mnemonicParsing="false" onAction="#radioSelect" text="Свёрнутая">
+               <toggleGroup>
+                  <ToggleGroup fx:id="informationGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="informationSelect2" layoutX="350.0" layoutY="12.0" mnemonicParsing="false" onAction="#radioSelect" selected="true" text="Развёрнутая" toggleGroup="$informationGroup" />
+            <Text layoutX="19.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Запуск приложения:">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="runSelect1" layoutX="222.0" layoutY="40.0" mnemonicParsing="false" onAction="#radioSelect" text="Главная страница">
+               <toggleGroup>
+                  <ToggleGroup fx:id="runInformation" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="runSelect2" layoutX="350.0" layoutY="39.0" mnemonicParsing="false" onAction="#radioSelect" selected="true" text="Настройки" toggleGroup="$runInformation" />
+            <Text fx:id="textInformation" layoutX="18.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите код для активации аккаунта:" visible="false">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnOk" layoutX="455.0" layoutY="69.0" mnemonicParsing="false" onAction="#btnClickOk" prefHeight="23.0" prefWidth="38.0" styleClass="smallButton" text="OK" visible="false" />
+            <Button fx:id="btnRecode" layoutX="503.0" layoutY="68.0" mnemonicParsing="false" onAction="#btnClickRecode" prefHeight="25.0" prefWidth="124.0" styleClass="smallButton" text="Отпр.повторно" visible="false" />
+            <Text fx:id="textCodeErr" fill="#ff0505" layoutX="601.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="197.26669311523432" x="50.0" y="50.0">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</Pane>

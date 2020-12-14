@@ -1,0 +1,543 @@
+@font-face {
+    src: url('../../resource/fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    src: url('../../resource/fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    src: url('../../resource/fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    src: url('../../resource/fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    src: url('../../resource/fonts/mr_apex/mr_apex.ttf');
+}
+
+.smallButton
+{
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-background-radius: 25px;
+    -fx-background-color: #4465ee;
+    -fx-text-fill: #ffffff;
+}
+
+.buttonMenu
+{
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-position: 30px 10px;
+    -fx-background-size: 30px;
+    -fx-padding: 15px 50px 10px 55px;
+    -fx-background-repeat: no-repeat;
+}
+
+.buttonMenu.nonactive
+{
+    -fx-font-family: mr_ApexMk3MediumG;
+    -fx-background-color: #4465ee;
+    -fx-text-fill: #ffffff;
+}
+
+.buttonMenu.nonactive.catalog
+{
+    -fx-background-image:url('../../resource/img/catalog_noactive.png');
+}
+
+.buttonMenu.nonactive.basket
+{
+    -fx-background-image:url('../../resource/img/basket.png');
+}
+
+.buttonMenu.nonactive.statistic
+{
+    -fx-background-image:url('../../resource/img/statistic.png');
+}
+
+.buttonMenu.active.catalog
+{
+    -fx-background-image:url('../../resource/img/catalog_active.png');
+}
+
+.buttonMenu.active.statistic
+{
+    -fx-background-image:url('../../resource/img/statistic_active.png');
+}
+
+.buttonMenu.active.basket
+{
+    -fx-background-image:url('../../resource/img/basket_active.png');
+}
+
+.buttonMenu.nonactive.all
+{
+    -fx-background-image:url('../../resource/img/all_noactive.png');
+}
+
+.buttonMenu.active.all
+{
+    -fx-background-image:url('../../resource/img/all_active.png');
+}
+
+.buttonMenu.nonactive.computer
+{
+    -fx-background-image:url('../../resource/img/computer_noactive.png');
+}
+
+.buttonMenu.active.computer
+{
+    -fx-background-image:url('../../resource/img/computer_active.png');
+}
+
+.buttonMenu.nonactive.notebook
+{
+    -fx-background-image:url('../../resource/img/notebook_noactive.png');
+}
+
+.buttonMenu.active.notebook
+{
+    -fx-background-image:url('../../resource/img/notebook_active.png');
+}
+
+.buttonMenu.nonactive.periphery
+{
+    -fx-background-image:url('../../resource/img/periphery_noactive.png');
+}
+
+.buttonMenu.active.periphery
+{
+    -fx-background-image:url('../../resource/img/periphery_active.png');
+}
+
+.buttonMenu.nonactive.accessories
+{
+    -fx-background-image:url('../../resource/img/accessories_noactive.png');
+}
+
+.buttonMenu.active.accessories
+{
+    -fx-background-image:url('../../resource/img/accessories_active.png');
+}
+
+.buttonMenu.nonactive.other
+{
+    -fx-background-image:url('../../resource/img/other_noactive.png');
+}
+
+.buttonMenu.active.other
+{
+    -fx-background-image:url('../../resource/img/other_active.png');
+}
+
+.buttonMenu.active
+{
+    -fx-font-family: mr_ApexMk3MediumG;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}
+
+.buttonMenu.nonactive.settings
+{
+    -fx-background-image:url('../../resource/img/settings_noactive.png');
+}
+
+.buttonMenu.active.settings
+{
+    -fx-background-image:url('../../resource/img/settings_active.png');
+}
+
+
+.buttonLogin
+{
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 25px;
+    -fx-background-color: #4465ee;
+    -fx-text-fill: #ffffff;
+}
+
+.textLabel {
+    -fx-font-family: Poppins;
+    -fx-font-weight: bold;
+    -fx-fill: #333333;
+}
+
+.textCaption {
+    -fx-font-family: Poppins;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-fill: #333333;
+}
+
+.textCaptionRus {
+    -fx-font-family: mr_ApexMk3MediumG;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-fill: #333333;
+}
+
+.mainText {
+    -fx-font-family: Poppins;
+    -fx-font-weight: bold;
+    -fx-fill: #ffffff;
+}
+
+.paneShadow{
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.4), 15, 0, 2, 0);
+}
+
+.paneBar {
+    -fx-background-color: #4465ee;
+}
+
+.textFogot{
+    -fx-font-family: Poppins;
+    -fx-font-weight: normal;
+    -fx-font-size: 13px;
+    -fx-fill: #999999;
+}
+
+.hLink{
+    -fx-font-family: Poppins;
+    -fx-font-weight: normal;
+    -fx-font-size: 13px;
+    -fx-text-fill: #666666;
+}
+
+.hLink:hover {
+    -fx-text-fill: #4465ee;
+    -fx-underline: false;
+}
+
+.searchField {
+    -fx-font-family: "Poppins Medium";
+    -fx-padding: 13px 30px 0 55px;
+    -fx-font-size: 16px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #e6e6e6;
+    -fx-prompt-text-fill: #999999;
+    -fx-text-inner-color: #000000;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-border-color: #a1a0a0;
+    -fx-background-position: 30px 17px;
+    -fx-background-image:url('../../resource/img/secured.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst {
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 16px;
+    -fx-padding: 13px 30px 0 55px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #e6e6e6;
+    -fx-prompt-text-fill: #999999;
+    -fx-text-inner-color: #000000;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+
+.textFirstRussian {
+    -fx-font-family: "mr_ApexMk3MediumG";
+    -fx-font-size: 22px;
+    -fx-padding: 13px 30px 0 55px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #e6e6e6;
+    -fx-prompt-text-fill: #999999;
+    -fx-text-inner-color: #000000;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+
+.textPay {
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 16px;
+    -fx-padding: 0px 10px 0 55px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #e6e6e6;
+    -fx-prompt-text-fill: #999999;
+    -fx-text-inner-color: #000000;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+
+.textPay > .text-field {
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 16px;
+    -fx-background-color: #e6e6e6;
+    -fx-prompt-text-fill: #999999;
+}
+
+.textPay.card{
+    -fx-background-position: 23px 9px;
+    -fx-background-image:url('../../resource/img/card.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textPay.address{
+    -fx-background-position: 23px 9px;
+    -fx-background-image:url('../../resource/img/address.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textPay.calendar{
+    -fx-background-position: 23px 9px;
+    -fx-background-image:url('../../resource/img/calendar.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textPay.hour{
+    -fx-background-position: 23px 9px;
+    -fx-background-image:url('../../resource/img/hour.png');
+    -fx-background-repeat: no-repeat;
+}
+
+
+.choiceBoxes {
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 15px;
+    -fx-padding: 5px 10px 0 55px;
+    -fx-background-color: #e6e6e6;
+    -fx-prompt-text-fill: #999999;
+    -fx-text-inner-color: #000000;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-mark-color: #4465ee;
+}
+
+.choiceBoxes .content {
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 16px;
+    -fx-background-color: #e6e6e6;
+    -fx-prompt-text-fill: #999999;
+}
+
+
+.choiceBoxes.select {
+    -fx-background-position: 25px 12px;
+    -fx-background-image:url('../../resource/img/select.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.choiceBoxes.description {
+    -fx-background-position: 25px 35px;
+    -fx-background-image:url('../../resource/img/description.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.choiceBoxes.description.notext {
+    -fx-padding: 30px 10px 0 55px;
+}
+
+.choiceBoxes.description.text{
+    -fx-padding: 5px 10px 0 55px;
+}
+
+.scroll-panes {
+    -fx-background-color: white;
+}
+
+.textFirst.login {
+    -fx-background-position: 30px 17px;
+    -fx-background-image:url('../../resource/img/secured.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst.pass {
+    -fx-background-position: 30px 17px;
+    -fx-background-image:url('../../resource/img/lock.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst.item {
+    -fx-background-position: 25px 12px;
+    -fx-background-image:url('../../resource/img/item.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst.price {
+    -fx-background-position: 25px 12px;
+    -fx-background-image:url('../../resource/img/price.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst.count {
+    -fx-background-position: 25px 12px;
+    -fx-background-image:url('../../resource/img/count.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst.user {
+    -fx-background-position: 30px 17px;
+    -fx-background-image:url('../../resource/img/user.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst.telephone {
+    -fx-background-position: 30px 17px;
+    -fx-background-image:url('../../resource/img/telephone.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst.email {
+    -fx-background-position: 30px 17px;
+    -fx-background-image:url('../../resource/img/email.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst.repass {
+    -fx-background-position: 30px 17px;
+    -fx-background-image:url('../../resource/img/repassword.png');
+    -fx-background-repeat: no-repeat;
+}
+
+.textFirst.login:focused{
+    -fx-background-position: 25px 17px;
+    -fx-background-image:url('../../resource/img/secured_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textFirst.pass:focused{
+    -fx-background-position: 25px 17px;
+    -fx-background-image:url('../../resource/img/lock_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textFirst.user:focused{
+    -fx-background-position: 25px 17px;
+    -fx-background-image:url('../../resource/img/user_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textFirst.telephone:focused{
+    -fx-background-position: 25px 17px;
+    -fx-background-image:url('../../resource/img/telephone_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textFirst.email:focused{
+    -fx-background-position: 25px 17px;
+    -fx-background-image:url('../../resource/img/email_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textFirst.repass:focused{
+    -fx-background-position: 25px 17px;
+    -fx-background-image:url('../../resource/img/repassword_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textFirst.item:focused{
+    -fx-background-position: 20px 12px;
+    -fx-background-image:url('../../resource/img/item_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.choiceBoxes.description.notext:focused {
+    -fx-background-image:url('../../resource/img/description_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.choiceBoxes.description.text:focused{
+    -fx-background-image:url('../../resource/img/description_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: black;
+}
+
+.trendLabel{
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 0px 0px 0 12px;
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+
+.textFirst.count:focused{
+    -fx-background-position: 20px 12px;
+    -fx-background-image:url('../../resource/img/count_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textFirst.price:focused{
+    -fx-background-position: 20px 12px;
+    -fx-background-image:url('../../resource/img/price_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textPay.card:focused{
+    -fx-background-position: 20px 9px;
+    -fx-background-image:url('../../resource/img/card_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textPay.address:focused{
+    -fx-background-position: 20px 9px;
+    -fx-background-image:url('../../resource/img/address_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textPay.calendar:focused{
+    -fx-background-position: 20px 9px;
+    -fx-background-image:url('../../resource/img/calendar_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.textPay.hour:focused{
+    -fx-background-position: 20px 9px;
+    -fx-background-image:url('../../resource/img/hour_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.choiceBoxes.select:focused {
+    -fx-background-position: 20px 12px;
+    -fx-background-image:url('../../resource/img/select_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.searchField:focused{
+    -fx-background-position: 25px 17px;
+    -fx-background-image:url('../../resource/img/repassword_active.png');
+    -fx-border-color: #4465ee;
+}
+
+.buttonLogin:hover{
+    -fx-background-color: #000000;
+}
+
+/*.buttonMenu.nonactive:hover{
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+}
+
+.buttonMenu.active:hover{
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+}*/
+
+.smallButton:hover{
+    -fx-background-color: #000000;
+}
+
+
+.cb{
+    -fx-background-color: white;
+    -fx-mark-color: #4465ee;
+}
+
+.cb .label{
+    -fx-text-fill: black;
+}
